@@ -11,7 +11,7 @@ let lastScroll=0;
 let mainHeaderHidden=false;
 
 let hideHeader = function(){
-	mainHeader.style.transform = `translate(0px,${-mainHeaderHeight}px)`
+	mainHeader.style.transform = `translate(0px,${-mainHeaderHeight*2}px)`
 	mainHeaderHidden=true;	
 }
 
