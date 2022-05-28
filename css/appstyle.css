@@ -651,6 +651,10 @@ svg{
 		font-size: 0.5rem;
 	}
 
+	#aboutPara{
+		grid-template-columns: 10% 90%;
+	}
+
 	[class*="-content"]{
 		padding-left: 5%;
 		padding-right: 5%;
@@ -827,7 +831,7 @@ svg{
 	}
 
 	#aboutPara{
-		grid-template-columns: 10% 90%;
+		grid-template-columns: 8% 92%;
 		grid-column: 1/span 2;
 	}
 
@@ -840,7 +844,7 @@ svg{
 	#competenciesHeaderWrapper{
 		padding-right: 55%;
 		padding-left: 5%;
-		grid-template-columns: 10% 90%;
+		grid-template-columns: 15% 85%;
 	}
 
 	.competencies-card-grid{
@@ -864,7 +868,7 @@ svg{
 	#contactHeaderWrapper{
 		padding-right: 60%;
 		padding-left: 5%;
-		grid-template-columns: 10% 90%;
+		grid-template-columns: 15% 85%;
 	}
 
 
