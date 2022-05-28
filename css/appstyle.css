@@ -757,6 +757,9 @@ svg{
 		grid-template-columns: 20% 80%;
 	}
 
+	.section-grid{
+		grid-template-rows: 5% 90% 5%;
+	}
 	.intro-content-grid{
 		height: 100%;
 		width: 100%;
@@ -862,13 +865,15 @@ svg{
 		grid-row: 2;
 	}
 
-
 	#contactHeaderWrapper{
 		padding-right: 50%;
 		padding-left: 5%;
 		grid-template-columns: 10% 90%;
 	}
 
+	#contactLinksWrapper{
+		grid-column-gap: 1%;
+	}
 
 
 }
