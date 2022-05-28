@@ -667,9 +667,35 @@ svg{
 		grid-template-columns: 30% 70%;
 	}
 
+
 	.competencies-cardcontent-wrapper-grid{
 		padding-top: 3%;
 	}
+
+	#aboutHeaderTextWrapper{
+		grid-column: 1/span 2;
+		justify-content: center;
+	}
+
+	#competenciesHeaderTextWrapper{
+		grid-column: 1/span 2;
+		justify-content: center;
+	}
+
+	#contactHeaderWrapper{
+		padding-right: 30%;
+		padding-left: 30%;
+		grid-template-columns: 0% 100%;
+	}
+
+	#contactHeaderTextWrapper{
+		justify-content: center;
+	}
+
+	.svg-header{
+		visibility: hidden;
+	}
+
 }
 
 @media only screen and (min-width: 1000px) and (max-height:  1025px){
@@ -832,7 +858,7 @@ svg{
 	}
 
 	#aboutPara{
-		grid-template-columns: 8% 92%;
+		grid-template-columns: 3% 97%;
 		grid-column: 1/span 2;
 	}
 
@@ -842,10 +868,20 @@ svg{
 		padding-bottom: 10%;
 	}
 
+	#aboutHeaderTextWrapper{
+		grid-column: 1/span 2;
+		justify-content: center;
+	}
+
 	#competenciesHeaderWrapper{
-		padding-right: 50%;
-		padding-left: 5%;
+		padding-right: 30%;
+		padding-left: 30%;
 		grid-template-columns: 10% 90%;
+	}
+
+	#competenciesHeaderTextWrapper{
+		grid-column: 1/span 2;
+		justify-content: center;
 	}
 
 	.competencies-card-grid{
@@ -866,13 +902,22 @@ svg{
 	}
 
 	#contactHeaderWrapper{
-		padding-right: 50%;
-		padding-left: 5%;
-		grid-template-columns: 10% 90%;
+		padding-right: 30%;
+		padding-left: 30%;
+		grid-template-columns: 0% 100%;
 	}
+
+	#contactHeaderTextWrapper{
+		justify-content: center;
+	}
+
 
 	#contactLinksWrapper{
 		grid-column-gap: 1%;
+	}
+
+	.svg-header{
+		visibility: hidden;
 	}
 
 
