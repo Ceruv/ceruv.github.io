@@ -1,14 +1,14 @@
 @font-face{
 	font-family: "Franklin Gothic Demi";
-  src: url(../resources/fonts/FRADM.TTF) format("truetype"),
-  		 url(../resources/fonts/FRADM.woff2) format("woff2");
-  font-weight: bolder;
+  	src: url(../resources/fonts/FRADM.TTF) format("truetype"),
+  	 	url(../resources/fonts/FRADM.woff2) format("woff2");
+  	font-weight: bolder;
 }
 
 @font-face{
 	font-family: "Franklin Gothic Medium";
-  src: url(../resources/fonts/framd.ttf) format("truetype"),
-  		 url(../resources/fonts/framd.woff2) format("woff2");
+	src: url(../resources/fonts/framd.ttf) format("truetype"),
+	  	url(../resources/fonts/framd.woff2) format("woff2");
 }
 
 *{
@@ -103,7 +103,7 @@ svg{
 	grid-column: 2;
 	width: 100%;
 	grid-template-columns: auto auto auto auto;
-	grid-column-gap: 2% 2% 2%;
+	grid-column-gap: 2%;
 	justify-content: space-around;
 	align-items: center;
 }
@@ -549,7 +549,7 @@ svg{
 	width: 100%;
 	grid-row: 2;
 	grid-template-columns: auto auto auto auto;
-	grid-column-gap: 5% 5% 5%;
+	grid-column-gap: 5%;
 	justify-content: space-around;
 	align-items: center;
 }
@@ -597,14 +597,160 @@ svg{
 	background-color: grey;
 }
 
-@media only screen and (orientation: portrait){
+@media only screen and (orientation: landscape) and (max-width: 1000px){
+	body{
+		grid-template-rows: 100% 100% 100% 100%;
+	}
+
+	.text-intro-hello{
+		font-size: 4rem;
+	}
+
+	.text-intro-para{
+		font-size: 1rem;
+
+	}
+
+	.text-about-header{
+		font-size: 1rem;
+	}
+
+	.text-about-para{
+		font-size: 0.75rem;
+	}
+
+	.text-about-resume-para{
+		font-size: 0.75rem;
+	}
+
+	.text-competencies-header{
+		font-size: 1rem;
+	}
+
+	.text-research-header{
+		font-size: 1rem;
+	}
+
+	.text-card-para{
+		font-size: 0.75rem;
+	}
+
+	.text-contact-header{
+		font-size: 1rem;
+	}
+
+	.text-contact-para{
+		font-size: 0.75rem;
+	}
+
+	.text-header-logo{
+		font-size: 0.75rem;
+	}
+
+	.text-header-sections{
+		font-size: 0.5rem;
+	}
+
+	[class*="-content"]{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.competencies-card-grid{
+		padding-right: 3%;
+		padding-left: 3%;
+		grid-column-gap: 0;
+		grid-template-columns: 30% 70%;
+	}
+
+	.competencies-cardcontent-wrapper-grid{
+		padding-top: 3%;
+	}
+}
+
+@media only screen and (min-width: 1000px) and (max-height:  1025px){
+	body{
+		grid-template-rows: 100% 100% 100% 100%;
+	}
+
+	.text-intro-hello{
+		font-size: 6rem;
+	}
+
+	.text-intro-para{
+		font-size: 1.75rem;
+
+	}
+
+	.text-about-header{
+		font-size: 1.75rem;
+	}
+
+	.text-about-para{
+		font-size: 1.5rem;
+	}
+
+	.text-about-resume-para{
+		font-size: 1rem;
+	}
+
+	.text-competencies-header{
+		font-size: 1.75rem;
+	}
+
+	.text-research-header{
+		font-size: 1.75rem;
+	}
+
+	.text-card-para{
+		font-size: 1.5rem;
+	}
+
+	.text-contact-header{
+		font-size: 1.75rem;
+	}
+
+	.text-contact-para{
+		font-size: 1.5rem;
+	}
+
+	.text-header-logo{
+		font-size: 1.25rem;
+	}
+
+	.text-header-sections{
+		font-size: 1rem;
+	}
+
+	[class*="-content"]{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.competencies-card-grid{
+		padding-right: 3%;
+		padding-left: 3%;
+		grid-column-gap: 0;
+		grid-template-columns: 30% 70%;
+	}
+
+	.competencies-cardcontent-wrapper-grid{
+		padding-top: 3%;
+	}
+}
+
+@media only screen and (orientation: portrait) and (max-width: 760px){
 	body{
 		grid-template-rows: 100% 100% 100% 100%;
 	}
 
 	#mainHeader{
-		grid-template-columns: 20% 60%;
-		grid-column-gap: 20%;
+		grid-template-columns: 30% 60%;
+		grid-column-gap: 10%;
+	}
+
+	#headerLogoWrapper{
+		grid-template-columns: 20% 80%;
 	}
 
 	.intro-content-grid{
@@ -681,6 +827,7 @@ svg{
 	}
 
 	#aboutPara{
+		grid-template-columns: 10% 90%;
 		grid-column: 1/span 2;
 	}
 
@@ -691,8 +838,9 @@ svg{
 	}
 
 	#competenciesHeaderWrapper{
-		padding-right: 30%;
-		padding-left: 30%;
+		padding-right: 55%;
+		padding-left: 5%;
+		grid-template-columns: 10% 90%;
 	}
 
 	.competencies-card-grid{
@@ -703,6 +851,8 @@ svg{
 	.competencies-image-wrapper{
 		grid-column: 1/span 2;
 		grid-row: 1;
+		padding-left: 20%;
+		padding-right: 20%;
 	}
 
 	.competencies-cardcontent-wrapper-grid{
@@ -712,14 +862,17 @@ svg{
 
 
 	#contactHeaderWrapper{
-		padding-right: 30%;
-		padding-left: 30%;
+		padding-right: 60%;
+		padding-left: 5%;
+		grid-template-columns: 10% 90%;
 	}
+
+
 
 }
 
 
-@media only screen and (orientation: portrait) and (min-width:  400px) and (min-height: 750px){
+@media only screen and (orientation: portrait) and (min-width:  400px) and (min-height: 750px)  and (max-width: 760px){
 	body{
 		grid-template-rows: 100% 80% 90% 70%;
 	}
@@ -773,7 +926,7 @@ svg{
 	}	
 }
 
-@media only screen and (orientation: portrait) and (min-width:  400px) and (max-height: 750px){
+@media only screen and (orientation: portrait) and (min-width:  400px) and (max-height: 750px) and (max-width: 760px){
 	body{
 		grid-template-rows: 100% 80% 90% 70%;
 	}
@@ -830,4 +983,78 @@ svg{
 
 	.text-header-sections{
 		font-size: 0.75rem;
+	}
+}
+@media only screen and (orientation: portrait) and (min-width: 767px){
+	body{
+		grid-template-rows: 100% 70% 90% 70%;
+	}
+
+	[class*="-content"]{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.text-intro-hello{
+		font-size: 8rem;
+	}
+
+	.text-intro-para{
+		font-size: 2rem;
+
+	}
+
+	.text-about-header{
+		font-size: 2rem;
+	}
+
+	.text-about-para{
+		font-size: 1.25rem;
+	}
+
+	.text-about-resume-para{
+		font-size: 1rem;
+	}
+
+	.text-competencies-header{
+		font-size: 1.8rem;
+	}
+
+	.text-research-header{
+		font-size: 1.8rem;
+	}
+
+	.text-card-para{
+		font-size: 1.25rem;
+	}
+
+	.text-contact-header{
+		font-size: 1.8rem;
+	}
+
+	.text-contact-para{
+		font-size: 1.25rem;
+	}
+
+	.text-header-logo{
+		font-size: 1.5rem;
+	}
+
+	.text-header-sections{
+		font-size: 1rem;
+	}
+	#aboutPara {
+	    grid-template-columns: 10% 90%;
+	}
+
+	#competenciesHeaderWrapper{
+		padding-right: 35%;
+		padding-left: 35%;
+		grid-template-columns: 20% 80%;
+	}
+	#contactHeaderWrapper{
+		padding-right: 35%;
+		padding-left: 35%;
+		grid-template-columns: 20% 80%;
+	}
 }
