@@ -574,15 +574,11 @@ svg{
 .fa{
 	text-align: center;
 	text-decoration: none;
-	padding: 2%;
 	color: #4b37c7;
-	border-radius: 50%;
-	background-color: #c6bcff;
 }
 .fa:hover{
 	transition: 1s;
 	color: #c6bcff;
-	background-color: #4b37c7;
 }
 
 .section-divider-wrapper-grid{
