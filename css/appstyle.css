@@ -824,8 +824,6 @@ svg{
 		font-size: 0.5rem;
 	}
 
-
-
 	#aboutImageWrapper{
 		visibility: hidden;	
 	}
@@ -842,9 +840,9 @@ svg{
 	}
 
 	#competenciesHeaderWrapper{
-		padding-right: 55%;
+		padding-right: 50%;
 		padding-left: 5%;
-		grid-template-columns: 15% 85%;
+		grid-template-columns: 10% 90%;
 	}
 
 	.competencies-card-grid{
@@ -866,9 +864,9 @@ svg{
 
 
 	#contactHeaderWrapper{
-		padding-right: 60%;
+		padding-right: 50%;
 		padding-left: 5%;
-		grid-template-columns: 15% 85%;
+		grid-template-columns: 10% 90%;
 	}
 
 
