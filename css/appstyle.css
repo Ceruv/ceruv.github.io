@@ -1,0 +1,833 @@
+@font-face{
+	font-family: "Franklin Gothic Demi";
+  src: url(../resources/fonts/FRADM.TTF) format("truetype"),
+  		 url(../resources/fonts/FRADM.woff2) format("woff2");
+  font-weight: bolder;
+}
+
+@font-face{
+	font-family: "Franklin Gothic Medium";
+  src: url(../resources/fonts/framd.ttf) format("truetype"),
+  		 url(../resources/fonts/framd.woff2) format("woff2");
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body, html{
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	-webkit-user-select: none;
+	-ms-user-select: none; 
+	user-select: none; 
+}
+
+body{
+	background-color: white;
+	grid-template-rows: 80% 80% 80% 80%;
+}
+
+svg{
+	width: 100%;
+	height: 100%;
+}
+
+
+[class*="-grid"]{
+	display: grid;
+	height: 100%;
+	width: 100%;	
+}
+
+[class*="-flex"]{
+	display: flex;
+	height: 100%;
+	width: 100%;	
+}
+
+[class*="-snap"]{
+	display: flex;
+	overflow: auto;
+	flex-direction: column;
+	scroll-snap-type: y mandatory;
+}
+
+[class*="-wrapper"]{
+	height: 100%;
+	width: 100%;
+}
+
+
+[class*="-content"]{
+	grid-row: 2;
+	padding-right: 15%;
+	padding-left: 15%;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+#mainHeader{
+	padding-left: 2%;
+	padding-right: 2%;
+	grid-template-columns: 20% 40%;
+	grid-column-gap: 40%;
+	position: fixed;
+	width: 100%;
+	height: 5%;
+	background-color: white;
+	z-index: 10;
+	transition: 1s;
+}
+
+#headerLogoWrapper{
+	grid-column: 1;
+	grid-template-columns: 10% 90%;
+	text-decoration: none;
+}
+
+.competencies-svg-wrapper{
+	grid-column: 1;
+}
+
+#headerLogoTextWrapper{
+	grid-column: 2;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 2%;	
+}
+
+#headerSectionsWrapper{
+	grid-column: 2;
+	width: 100%;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 2% 2% 2%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#introLink{
+	grid-column: 1;
+}
+
+#aboutLink{
+	grid-column: 2;
+}
+
+#competenciesLink{
+	grid-column: 3;
+}
+
+#contactLink{
+	grid-column: 4;
+}
+
+.section-grid{
+	grid-template-rows: 10% 80% 10%;
+}
+
+
+#introSection{
+	grid-row: 1;
+}
+
+.intro-content-grid{
+	grid-template-columns: 38% 58%;
+	grid-column-gap: 4%;
+}
+
+#introSvgWrapper{
+	height: 100%;
+	width: 100%;
+	grid-column: 1;
+}
+
+#introSvg{
+	-webkit-animation: introRotate 60s linear infinite;
+}
+
+
+#introSvg:hover #path1{
+	transform: translateY(-10.6%);
+}
+
+#introSvg:hover #path2{
+	transform: translate(-9.2%, 5.5%);
+}
+
+#introSvg:hover #path3{
+	transform: translate(9.2%, 5.5%);
+}
+
+#path1, #path2, #path3{
+	transition: 3s;
+}
+
+#introPara{
+	height: 100%;
+	width: 100%;
+	grid-column: 2;
+	padding-top: 25%;
+}
+
+[class*="text-"]{
+	margin: 0;
+}
+
+.text-intro-hello{
+	font-size: 8rem;
+	color: #c10306;
+	font-family: Franklin Gothic Demi;
+	font-weight: bolder;
+}
+
+.text-intro-para{
+	font-size: 2rem;
+	color: black;
+	font-family: Franklin Gothic Medium;
+	font-weight: bold;
+
+}
+
+.text-about-header{
+	font-size: 2rem;
+	color: #c10306;
+	font-family: Franklin Gothic Medium;
+	font-weight: bold;
+
+}
+
+.text-about-para{
+	font-size: 1.5rem;
+	color: black;
+	font-family: Franklin Gothic Medium;
+
+}
+
+.text-about-resume-para{
+	font-size: 1rem;
+	color: black;
+	font-family: Franklin Gothic Medium;
+	font-style: italic;
+}
+
+.text-link{
+	font-weight: bold;
+	color: #c10306;
+}
+
+.text-link:link {
+  color: #c10306;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.text-link:visited {
+  color:  #c10306;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  color: #ffa8b4;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.text-link:active {
+  color: #ffa8b4;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+.text-competencies-header{
+	font-size: 2rem;
+	color: #1c4bde;
+	font-family: Franklin Gothic Medium;
+	font-weight: bold;
+}
+
+.text-research-header{
+	font-size: 2rem;
+	color: #ffa8b4;
+	font-family: Franklin Gothic Medium;
+	font-weight: bold;
+}
+
+.text-card-para{
+	grid-row: 2;
+	grid-column: 2;
+	font-size: 1.5rem;
+	color: black;
+	font-family: Franklin Gothic Medium;
+}
+
+.text-contact-header{
+	font-size: 2rem;
+	color:#4b37c7;
+	font-family: Franklin Gothic Medium;
+	font-weight: bold;
+}
+
+.text-contact-para{
+	font-size: 1.5rem;
+	color: black;
+	font-family: Franklin Gothic Medium;
+	text-align: center;	
+}
+
+.text-header-logo{
+	font-size: 1.5rem;
+	color:black;
+	font-family: Franklin Gothic Medium;
+	font-weight: bold;
+}
+
+.text-header-sections{
+	font-size: 1rem;
+	color:darkgray;
+	font-family: Franklin Gothic Medium;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.text-header-sections:hover {
+	color: grey;
+}
+
+.text-header-sections:active:hover {
+	color: black;
+}
+
+
+@-webkit-keyframes introRotate{
+	0%{
+		-webkit-transform: translate(0px, 1%) rotateZ(0deg); 
+	}
+
+	10%{
+			-webkit-transform: translate(0px, -3%) rotateZ(36deg); 
+		}
+
+	20%{
+			-webkit-transform: translate(0px, 3%) rotateZ(72deg); 
+		}
+
+	30%{
+			-webkit-transform: translate(0px, -3%) rotateZ(108deg); 
+		}
+
+	40%{
+			-webkit-transform: translate(0px, 3%) rotateZ(144deg); 
+		}
+
+	50%{
+			-webkit-transform: translate(0px, -3%) rotateZ(180deg); 
+		}
+
+	60%{
+			-webkit-transform: translate(0px, 3%) rotateZ(216deg); 
+		}
+
+	70%{
+			-webkit-transform: translate(0px, -3%) rotateZ(252deg); 
+		}
+
+	80%{
+			-webkit-transform: translate(0px, 3%) rotateZ(288deg); 
+		}
+
+	90%{
+			-webkit-transform: translate(0px, -3%) rotateZ(324deg); 
+		}
+
+	100%{
+		-webkit-transform: translate(0px, 3%) rotateZ(360deg); 
+	}
+
+}
+
+
+#aboutSection{
+	grid-row: 2;
+	background-color: white;
+}
+
+.about-content-grid{
+	grid-row: 1/span 2;
+	grid-template-columns: 58% 38%;
+	grid-column-gap: 4%;
+}
+
+#aboutPara{
+	grid-column: 1;
+	grid-template-columns: 20% 80%;
+	grid-template-rows: 10% auto 1px 15%;
+
+}
+
+#aboutSvgWrapper{
+	height: 100%;
+	width: 100%;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#aboutImageWrapper{
+	grid-column: 2;
+	display: flex;
+	justify-content: center;
+ 	align-items: center
+}
+
+#aboutImage{
+	width: 50%;
+	-webkit-mask-image: linear-gradient(black,  black, transparent);
+}
+
+
+#aboutHeaderTextWrapper{
+	grid-row: 1;
+	grid-column: 2;
+	justify-content: flex-start;
+	align-items: center;		
+}
+
+#aboutParaTextWrapper{
+	grid-row: 2;
+	grid-column: 1/span 2;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 10%;
+	padding-top: 5%;
+	padding-bottom: 2%;
+}
+
+#aboutDividerWrapper{
+	height: 100%;
+	width: 100%;
+	grid-column: 1/span 2;
+	grid-row: 3;
+	background-color: #c10306;
+}
+
+#aboutResumeTextWrapper{
+	grid-column: 1/span 2;
+	grid-row: 4;
+	justify-content: center;
+	align-items: center;	
+}
+
+
+#competenciesSection{
+	grid-row: 3;
+}
+
+#competenciesHeaderWrapper{
+	padding-left: 40%;
+	padding-right: 40%;
+	grid-template-columns: 20% 80%;
+}
+
+#competenciesSvgWrapper{
+	height: 100%;
+	width: 100%;
+	grid-column: 1;
+}
+
+#competenciesHeaderTextWrapper{
+	grid-row: 1;
+	grid-column: 2;
+	justify-content: flex-start;
+	align-items: center;		
+}
+
+#snapResearch{
+	background-color: #a8c1ff;
+}
+
+#snapWriting{
+	background-color: #c6bcff;
+}
+
+#snapTech{
+	background-color: #ffa8b4;
+}
+
+.competencies-content-grid{
+	padding-top: 5%;
+	grid-template-columns: 1;
+	grid-template-rows: 1;
+}
+
+#competenciesSnapContainer{
+	grid-row: 1;
+	grid-column: 1;
+	height: 100%;
+	width: 100%;
+}
+
+.competencies-card-grid{
+	min-height: 80%;
+	scroll-snap-align: start;
+	padding-left: 10%;
+	padding-right: 10%;
+	grid-template-columns: 38% 58%;
+	grid-column-gap: 4%;
+}
+
+
+.competencies-image-wrapper{
+	grid-column: 1;
+	display: flex;
+	justify-content: center;
+ 	align-items: center
+}
+
+#researchImage{
+	width: 100%;
+}
+
+.competencies-cardcontent-wrapper-grid{
+	padding-top: 10%;
+	grid-template-columns: 10% 90%;
+	grid-template-rows: 10% 90%;
+}
+
+.competencies-svg-wrapper{
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#researchHeaderTextWrapper{
+	grid-row: 1;
+	grid-column: 2;
+	justify-content: flex-start;
+	align-items: center;		
+}
+
+#contactSection{
+	grid-row: 4;
+}
+
+#contactHeaderWrapper{
+	padding-left: 40%;
+	padding-right: 40%;
+	grid-template-columns: 20% 80%;
+}
+
+#contactSvgWrapper{
+	height: 100%;
+	width: 100%;
+	grid-column: 1;
+}
+
+#contactHeaderTextWrapper{
+	grid-row: 1;
+	grid-column: 2;
+	justify-content: flex-start;
+	align-items: center;		
+}
+
+
+#contactContentWrapper{
+	grid-row: 2;
+	grid-template-rows: 65% 30%;
+	grid-row-gap: 5%;
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+
+#contactTextWrapper{
+	grid-row: 1;
+}
+
+#contactLinksWrapper{
+	width: 100%;
+	grid-row: 2;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 5% 5% 5%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#elink{
+	grid-column: 1;
+
+}
+
+#lilink{
+	grid-column: 2;
+}
+
+#tlink{
+	grid-column: 3;
+}
+
+#ilink{
+	grid-column: 4;
+}
+
+.fa{
+	text-align: center;
+	text-decoration: none;
+	padding: 2%;
+	color: #4b37c7;
+	border-radius: 50%;
+	background-color: #c6bcff;
+}
+.fa:hover{
+	transition: 1s;
+	color: #c6bcff;
+	background-color: #4b37c7;
+}
+
+.section-divider-wrapper-grid{
+	grid-row: 3;
+	grid-template-rows: auto 1px auto;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.section-divider{
+	grid-row: 2;
+	background-color: grey;
+}
+
+@media only screen and (orientation: portrait){
+	body{
+		grid-template-rows: 100% 100% 100% 100%;
+	}
+
+	#mainHeader{
+		grid-template-columns: 20% 60%;
+		grid-column-gap: 20%;
+	}
+
+	.intro-content-grid{
+		height: 100%;
+		width: 100%;
+		grid-template-rows: 36% 60%;
+		grid-column-gap: 4%;
+		grid-template-columns: 100%;
+	}
+
+	#introSvgWrapper{
+		grid-row: 1;
+	}
+
+	#introPara{
+		grid-row: 2;
+		grid-column: 1;
+		text-align: center;
+	}
+
+	.text-intro-hello{
+		font-size: 4rem;
+	}
+
+	.text-intro-para{
+		font-size: 1rem;
+
+	}
+
+	.text-about-header{
+		font-size: 1rem;
+	}
+
+	.text-about-para{
+		font-size: 0.75rem;
+	}
+
+	.text-about-resume-para{
+		font-size: 0.75rem;
+	}
+
+	.text-competencies-header{
+		font-size: 1rem;
+	}
+
+	.text-research-header{
+		font-size: 1rem;
+	}
+
+	.text-card-para{
+		font-size: 0.75rem;
+	}
+
+	.text-contact-header{
+		font-size: 1rem;
+	}
+
+	.text-contact-para{
+		font-size: 0.75rem;
+	}
+
+	.text-header-logo{
+		font-size: 0.75rem;
+	}
+
+	.text-header-sections{
+		font-size: 0.5rem;
+	}
+
+
+
+	#aboutImageWrapper{
+		visibility: hidden;	
+	}
+
+	#aboutPara{
+		grid-column: 1/span 2;
+	}
+
+	#aboutParaTextWrapper{
+		padding: 0;
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+
+	#competenciesHeaderWrapper{
+		padding-right: 30%;
+		padding-left: 30%;
+	}
+
+	.competencies-card-grid{
+		min-height: 96%;
+		grid-template-rows: 35% 65%;
+	}
+
+	.competencies-image-wrapper{
+		grid-column: 1/span 2;
+		grid-row: 1;
+	}
+
+	.competencies-cardcontent-wrapper-grid{
+		grid-column: 1/span 2;
+		grid-row: 2;
+	}
+
+
+	#contactHeaderWrapper{
+		padding-right: 30%;
+		padding-left: 30%;
+	}
+
+}
+
+
+@media only screen and (orientation: portrait) and (min-width:  400px) and (min-height: 750px){
+	body{
+		grid-template-rows: 100% 80% 90% 70%;
+	}
+	.text-intro-hello{
+		font-size: 6rem;
+	}
+
+	.text-intro-para{
+		font-size: 1.5rem;
+
+	}
+
+	.text-about-header{
+		font-size: 1.5rem;
+	}
+
+	.text-about-para{
+		font-size: 1rem;
+	}
+
+	.text-about-resume-para{
+		font-size: 1rem;
+	}
+
+	.text-competencies-header{
+		font-size: 1.5rem;
+	}
+
+	.text-research-header{
+		font-size: 1.5rem;
+	}
+
+	.text-card-para{
+		font-size: 1rem;
+	}
+
+	.text-contact-header{
+		font-size: 1.5rem;
+	}
+
+	.text-contact-para{
+		font-size: 1rem;
+	}
+
+	.text-header-logo{
+		font-size: 1rem;
+	}
+
+	.text-header-sections{
+		font-size: 0.75rem;
+	}	
+}
+
+@media only screen and (orientation: portrait) and (min-width:  400px) and (max-height: 750px){
+	body{
+		grid-template-rows: 100% 80% 90% 70%;
+	}
+}
+
+@media only screen and (orientation: portrait) and (max-width:  431px) and (min-height: 730px){
+	body{
+		grid-template-rows: 100% 80% 100% 70%;
+	}
+	.text-intro-hello{
+		font-size: 6.5rem;
+	}
+
+	.text-intro-para{
+		font-size: 1.25rem;
+
+	}
+
+	.text-about-header{
+		font-size: 1.25rem;
+	}
+
+	.text-about-para{
+		font-size: 1rem;
+	}
+
+	.text-about-resume-para{
+		font-size: 1rem;
+	}
+
+	.text-competencies-header{
+		font-size: 1.25rem;
+	}
+
+	.text-research-header{
+		font-size: 1.25rem;
+	}
+
+	.text-card-para{
+		font-size: 1rem;
+	}
+
+	.text-contact-header{
+		font-size: 1.25rem;
+	}
+
+	.text-contact-para{
+		font-size: 1rem;
+	}
+
+	.text-header-logo{
+		font-size: 1rem;
+	}
+
+	.text-header-sections{
+		font-size: 0.75rem;
+}
