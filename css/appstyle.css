@@ -248,6 +248,7 @@ svg{
 	color: #1c4bde;
 	font-family: Franklin Gothic Medium;
 	font-weight: bold;
+	order: 2;
 }
 
 .text-research-header{
@@ -270,6 +271,7 @@ svg{
 	color:#4b37c7;
 	font-family: Franklin Gothic Medium;
 	font-weight: bold;
+	order: 2;
 }
 
 .text-contact-para{
@@ -433,15 +435,14 @@ svg{
 }
 
 #competenciesSvgWrapper{
-	height: 100%;
-	width: 100%;
-	grid-column: 1;
+	width: 10%;
+	order: 1;
 }
 
 #competenciesHeaderTextWrapper{
 	grid-row: 1;
-	grid-column: 2;
-	justify-content: flex-start;
+	grid-column: 1/span 2;
+	justify-content: center;
 	align-items: center;		
 }
 
@@ -519,19 +520,18 @@ svg{
 	grid-template-columns: 10% 90%;
 }
 
-#contactSvgWrapper{
-	height: 100%;
-	width: 100%;
-	grid-column: 1;
-}
 
 #contactHeaderTextWrapper{
 	grid-row: 1;
-	grid-column: 2;
-	justify-content: flex-start;
+	grid-column: 1/span 2;
+	justify-content: center;
 	align-items: center;		
 }
 
+#contactSvgWrapper{
+	order: 1;
+	width: 10%;
+}
 
 #contactContentWrapper{
 	grid-row: 2;
@@ -621,6 +621,7 @@ svg{
 
 	.text-competencies-header{
 		font-size: 1rem;
+		text-align: center;
 	}
 
 	.text-research-header{
@@ -633,6 +634,7 @@ svg{
 
 	.text-contact-header{
 		font-size: 1rem;
+		text-align: center;
 	}
 
 	.text-contact-para{
