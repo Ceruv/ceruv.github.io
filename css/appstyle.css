@@ -364,7 +364,7 @@ svg{
 
 #aboutPara{
 	grid-column: 1;
-	grid-template-columns: 20% 80%;
+	grid-template-columns: 5% 95%;
 	grid-template-rows: 10% auto 1px 15%;
 
 }
@@ -429,7 +429,7 @@ svg{
 #competenciesHeaderWrapper{
 	padding-left: 40%;
 	padding-right: 40%;
-	grid-template-columns: 20% 80%;
+	grid-template-columns: 10% 90%;
 }
 
 #competenciesSvgWrapper{
@@ -493,7 +493,7 @@ svg{
 
 .competencies-cardcontent-wrapper-grid{
 	padding-top: 10%;
-	grid-template-columns: 10% 90%;
+	grid-template-columns: 3% 97%;
 	grid-template-rows: 10% 90%;
 }
 
@@ -516,7 +516,7 @@ svg{
 #contactHeaderWrapper{
 	padding-left: 40%;
 	padding-right: 40%;
-	grid-template-columns: 20% 80%;
+	grid-template-columns: 10% 90%;
 }
 
 #contactSvgWrapper{
