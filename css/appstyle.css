@@ -839,19 +839,21 @@ svg{
 	.intro-content-grid{
 		height: 100%;
 		width: 100%;
-		grid-template-rows: 36% 60%;
-		grid-column-gap: 4%;
+		grid-template-rows: 50% 46%;
+		grid-row-gap: 4%;
 		grid-template-columns: 100%;
 	}
 
 	#introSvgWrapper{
 		grid-row: 1;
+		padding-top: 10%;
 	}
 
 	#introPara{
 		grid-row: 2;
 		grid-column: 1;
 		text-align: center;
+		padding-top: 0;
 	}
 
 	.text-intro-hello{
