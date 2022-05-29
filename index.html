@@ -13,6 +13,24 @@
         <title>Ryan Tan</title>
 	</head>
 	<body class="container-grid">
+		<header id="mainHeader" class="-grid">
+			<a  href="#" id="headerLogoWrapper" class="-wrapper-grid">
+				<div class="header-svg-wrapper">
+					<svg viewbox="0 0 251 251">
+						<path id="pathHeader" d="M45 33 L45 218 L206 126 Z" stroke-width="0" fill="#4b37c7"//>
+					</svg>
+				</div>
+				<div id="headerLogoTextWrapper" class="-flex">
+					<p class="text-header-logo">Ryan Tan</p>
+				</div>
+			</a>
+			<div id="headerSectionsWrapper" class="-wrapper-flex">
+				<a id="introLink" class="text-header-sections" href="#introSection">Introduction</a>
+				<a id="aboutLink" class="text-header-sections" href="#introDivider">About</a>
+				<a id="competenciesLink" class="text-header-sections" href="#aboutDivider">Competencies</a>
+				<a id="contactLink" class="text-header-sections" href="#competenciesDivider">Contact</a>
+			</div>
+		</header>
 		<section id="introSection" class="section-grid">
 			<div class="intro-content-grid">
 				<div>
@@ -22,7 +40,7 @@
 						<image id="introImage" x="76" y="76" width="100" height="100" href=".\resources\Biophotothing.png"/>
 						<path id="path1" d="M126 126 L218 71 L33 71 Z" stroke-width="0" fill="#c10306"/>
 						<path id="path2" d="M126 126 L33 71 L126 232 Z" stroke-width="0" fill="#1c4bde"/>
-						<path id="path3" d="M126 126 L126 232 L218 71 Z" stroke-width="0" fill="#0e6600"/>
+						<path id="path3" d="M126 126 L126 232 L218 71 Z" stroke-width="0" fill="#4b37c7"/>
 					</svg>
 				</div>
 				<article id="introPara">
@@ -31,14 +49,14 @@
 				</article>
 				
 			</div>
-			<div class="section-divider-wrapper-grid">
+			<div id="introDivider" class="section-divider-wrapper-grid">
 					<div class="section-divider"></div>
 			</div>
 		</section>
 		<section id="aboutSection" class="section-grid">
 			<div class="about-content-grid">
 				<div id="aboutPara" class="-grid">
-					<div id="aboutSvgWrapper">
+					<div id="aboutSvgWrapper" class="svg-header">
 						<svg id="aboutSvg" viewbox="0 0 251 251">
 							<path id="pathAbout" d="M45 33 L45 218 L206 126 Z" stroke-width="0" fill="#c10306"//>
 						</svg>
@@ -62,14 +80,14 @@
 					<img id="aboutImage" src=".\resources\about.png">
 				</div>
 			</div>
-			<div class="section-divider-wrapper-grid">
+			<div id="aboutDivider" class="section-divider-wrapper-grid">
 					<div class="section-divider"></div>
 			</div>
 		</section>
 		<section id="competenciesSection" class="section-grid">
 			<div id="competenciesHeaderWrapper" class="-grid">
 				<div id="competenciesSvgWrapper">
-					<svg id="competenciesSvg" viewbox="0 0 251 251">
+					<svg id="competenciesSvg" class="svg-header" viewbox="0 0 251 251">
 						<path id="pathCompetencies" d="M33 45 L218 45 L126 206 Z" stroke-width="0" fill="#1c4bde"//>
 					</svg>
 				</div>
@@ -85,15 +103,15 @@
 						</div>
 						<div class="competencies-cardcontent-wrapper-grid">
 							<div class="competencies-svg-wrapper">
-								<svg id="researchSvg" viewbox="0 0 251 251">
+								<svg id="researchSvg" class="svg-header" viewbox="0 0 251 251">
 									<path id="pathResearch" d="M45 33 L45 218 L206 126 Z" stroke-width="0" fill="#1c4bde"//>
 								</svg>
 							</div>
-							<div id="researchHeaderTextWrapper" class="-flex">
+							<div class="card-header-wrapper-flex">
 								<p class="text-research-header" style="color: #1c4bde;">Research</p>
 							</div>
 							<article class="text-card-para">
-								<p>As a Social Science student, I have experience conducting qualitative and quantitative research. I particularly enjoy drafting and analysing survey questions and the responses that it would entail, and have used the programming language <i>R</i> to this end.</p>
+								<p>As a Social Science student, I have experience conducting qualitative and quantitative research. I particularly enjoy drafting and analysing survey questions and the responses that it would entail, and have used the programming language <i>R</i> to this end.</p> <br>
 								<p>I am also fond of coding qualitative data, which I have used in my prior papers on topics such as American culture and politics.</p>
 							</article>
 						</div>
@@ -104,12 +122,12 @@
 						</div>
 						<div class="competencies-cardcontent-wrapper-grid">
 							<div class="competencies-svg-wrapper">
-								<svg id="researchSvg" viewbox="0 0 251 251">
-									<path id="pathResearch" d="M45 33 L45 218 L206 126 Z" stroke-width="0" fill="#0e6600"//>
+								<svg id="researchSvg" class="svg-header" viewbox="0 0 251 251">
+									<path id="pathResearch" d="M45 33 L45 218 L206 126 Z" stroke-width="0" fill="#4b37c7"//>
 								</svg>
 							</div>
-							<div id="researchHeaderTextWrapper" class="-flex">
-								<p class="text-research-header" style="color: #0e6600;">Writing</p>
+							<div class="card-header-wrapper-flex">
+								<p class="text-research-header" style="color: #4b37c7;">Writing</p>
 							</div>
 							<article class="text-card-para">
 								<p>Apart from essays and papers, I am able to generate writing for traditional and new media. Through my time in university, I have learnt how to engage in formats such as press releases, feature articles, and social media copywriting pieces.</p>
@@ -122,30 +140,30 @@
 						</div>
 						<div class="competencies-cardcontent-wrapper-grid">
 							<div class="competencies-svg-wrapper">
-								<svg id="researchSvg" viewbox="0 0 251 251">
+								<svg id="researchSvg" class="svg-header" viewbox="0 0 251 251">
 									<path id="pathResearch" d="M45 33 L45 218 L206 126 Z" stroke-width="0" fill="#c10306"//>
 								</svg>
 							</div>
-							<div id="researchHeaderTextWrapper" class="-flex">
+							<div class="card-header-wrapper-flex">
 								<p class="text-research-header" style="color: #c10306">Tech</p>
 							</div>
 							<article class="text-card-para">
-								<p>The software that I am acquainted with includes the Microsoft Office Suite, Python, CSS, Javascript, and HTML. My time in the military has increased my familiarity with computers, where I assisted the Defence Science and Agency with projects as an on-site computer technician.</p> 
+								<p>The software that I am acquainted with includes the Microsoft Office Suite, Python, CSS, Javascript, and HTML. My time in the military has increased my familiarity with computers, where I assisted the Defence Science and Agency with projects as an on-site computer technician.</p> <br>
 								<p>I am also a proficient Google user.</p>
 							</article>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="section-divider-wrapper-grid">
+			<div id="competenciesDivider" class="section-divider-wrapper-grid">
 					<div class="section-divider"></div>
 			</div>
 		</section>
 		<section  id="contactSection" class="section-grid">
 			<div id="contactHeaderWrapper" class="-grid">
 				<div id="contactSvgWrapper">
-					<svg id="contactSvg" viewbox="0 0 251 251">
-						<path id="pathContact" d="M33 45 L218 45 L126 206 Z" stroke-width="0" fill="#0e6600"//>
+					<svg id="contactSvg" class="svg-header" viewbox="0 0 251 251">
+						<path id="pathContact" d="M33 45 L218 45 L126 206 Z" stroke-width="0" fill="#4b37c7"//>
 					</svg>
 				</div>
 				<div id="contactHeaderTextWrapper" class="-flex">
