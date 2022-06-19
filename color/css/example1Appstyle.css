@@ -1,0 +1,366 @@
+@font-face{
+	font-family: "Franklin Gothic Demi";
+  	src: url(../resources/fonts/FRADM.TTF) format("truetype"),
+  	 	url(../resources/fonts/FRADM.woff2) format("woff2");
+  	font-weight: bolder;
+}
+
+@font-face{
+	font-family: "Franklin Gothic Medium";
+	src: url(../resources/fonts/framd.ttf) format("truetype"),
+	  	url(../resources/fonts/framd.woff2) format("woff2");
+}
+
+
+#example1{
+	grid-row: 1;
+	background-color: white;
+	grid-template-rows: 8% 70% auto auto auto;
+}
+
+#example1-header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 8%;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+	padding: 0 15% 0 15%;
+	justify-content: space-between;
+}
+
+#example1-logo-container{
+	width: 12vw;
+	padding: 0.4vw 0.3vw 0 0.7vw;
+	flex-direction: column;
+	justify-content: center;
+	text-decoration: none;
+}
+
+
+#example1-logo-container:visited{
+	color: black;
+}
+
+#example1-logo-container:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+#example1-logo-container:active{
+	color: black;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.example1-logo-text1{
+	font-family: "Franklin Gothic Demi";
+	font-size: 1.5vw;
+	letter-spacing: 0.8vw;
+	line-height: 0;
+}
+
+.example1-logo-text2{
+	font-family: "Franklin Gothic Medium";
+	font-size: 1vw;
+	letter-spacing: 0.8vw;
+	line-height: 0;
+}
+
+.example1-logo-text3{
+	font-family: "Franklin Gothic Medium";
+	font-size: 0.47vw;
+	letter-spacing: 0.11vw;
+	line-height: 1.5;
+}
+
+.example1-para-text1{
+	font-family: "Franklin Gothic Demi";
+	color: green;
+	font-weight: bold;
+	font-size: 2vw;
+	text-align: center;
+}
+
+.example1-para-text2{
+	font-family: "Franklin Gothic Medium";
+	color: black;
+	font-size: 1vw;
+	text-align: center;
+	line-height: 1.5vw;
+}
+
+.example1-para-text3{
+	font-family: "Franklin Gothic Demi";
+	color: green;
+	font-weight: bold;
+	font-size: 1.4vw;
+	text-align: left
+}
+
+.example1-para-text4{
+	font-family: "Franklin Gothic Medium";
+	font-size: 1vw;
+	text-align: left
+}
+
+.example1-para-text5{
+	font-family: "Franklin Gothic Medium";
+	font-size: 0.8vw;
+	text-align: center;
+}
+
+#example1-logo-divider{
+	height: 0.25vh;
+	width: 9.7vw;
+	background-color: black;
+}
+
+#example1-nav-container{
+	width:  48vw;
+	text-align: center;
+	justify-content: space-evenly;
+	padding-top: 1.7vw;
+}
+
+.example1-nav-item{
+	font-family: "Franklin Gothic Demi";
+	height: 100%;
+	font-size: 1vw;
+	text-align: left;
+}
+
+.example1-nav-item:hover .example1-dropdown{
+		display: block;
+}
+
+
+.example1-nav-item:hover{
+		border-bottom: 3px solid green;
+}
+
+
+.example1-dropdown{
+	display: none;
+	position: absolute;
+	top: 100%;
+	z-index: 3;
+	background-color: white;
+	min-width: 15vw;
+}
+
+.example1-dropdown div{
+	text-align: left;
+	height: 3vw;
+	font-size: 1vw;
+	padding: 1vw;
+}
+
+.example1-dropdown div:hover{
+	background-color: lightgreen;
+	border-bottom: 3px solid green;
+}
+
+.example1-dropdown div:active{
+	background-color: green;
+	border-bottom: 3px solid green;
+}
+
+#example1-bg-container{
+	grid-row: 2;
+	background-color: lightgreen;
+	justify-content: center;
+}
+
+#example1-bg{
+	background-image:linear-gradient(
+		to left, 
+		rgb(144,238,144,1),
+		rgb(144,238,144,0), 
+		rgb(144,238,144,0), 
+		rgb(144,238,144,0),
+		rgb(144,238,144,1)), url("../resources/example1bg.jpg");
+	background-size: cover;
+	width: 100%;
+}
+
+#example1-introSection{
+	grid-row: 3;
+	padding: 2% 20% 10% 20%;
+}
+
+#example1-scheduleButton{
+	justify-content: center;
+}
+
+
+#example1-scheduleButton p{
+	font-family: "Franklin Gothic Demi";
+	font-size: 1.2vw;	
+	margin: 0;
+	background-color: lightgreen;
+	padding: 16px 23px 16px 32px;
+}
+
+
+#example1-scheduleButton p:hover{
+	transform: translateY(1px);
+	background-color: rgb(120,214,120,1);
+}
+
+#example1-scheduleButton p:active{
+	background-color: green;
+}
+
+#example1-infoSection{
+	grid-row: 4;
+	padding: 2% 10% 10% 10%;
+}
+
+#example1-info-container{
+	width: 100%;
+	height: 60vh;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.example1-info-item-grid{
+ 	width: 24%;
+ 	height: 100%;
+ 	background-color: lightgreen;
+ 	grid-template-rows:50% 40% 10%;
+ 	border-radius: 5px;
+ 	text-align: center;
+   	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1), 0 0 4px 5px rgba(0, 0, 0, 0.1) ;
+}
+
+.example1-info-item-grid:hover{
+	box-shadow: 00 4px 4px rgba(0, 0, 0, 0.2), 0 0 4px 5px rgba(0, 0, 0, 0.2) ;
+	transform: translateY(1px);
+}
+
+.example1-info-item-grid:active{
+	box-shadow: 00 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px 5px rgba(0, 0, 0, 0.3) ;
+	transform: translateY(2px);
+}
+
+.example1-info-bg{
+	height: 100%;
+	width: 100%;
+	grid-row: 1;
+	background-size: cover;
+	border-radius: 5px;
+
+
+}
+
+#example1-info1{
+	background-image:linear-gradient( 
+		rgba(144,238,144,0), 
+		rgba(144,238,144,0), 
+		rgba(144,238,144,0),
+		rgba(144,238,144,1)), url("../resources/example1info1.jpg");	
+}
+
+#example1-info2{
+	background-image:linear-gradient( 
+		rgba(144,238,144,0), 
+		rgba(144,238,144,0), 
+		rgba(144,238,144,0),
+		rgba(144,238,144,1)), url("../resources/example1info2.jpg");	
+}
+
+#example1-info3{
+	background-image:linear-gradient( 
+		rgba(144,238,144,0), 
+		rgba(144,238,144,0), 
+		rgba(144,238,144,0),
+		rgba(144,238,144,1)), url("../resources/example1info3.jpg");	
+}
+
+#example1-info4{
+	background-image:linear-gradient( 
+		rgba(144,238,144,0), 
+		rgba(144,238,144,0), 
+		rgba(144,238,144,0),
+		rgba(144,238,144,1)), url("../resources/example1info4.jpg");	
+}
+
+.example1-info-text{
+	grid-row: 2;
+	padding: 0 1.5vw 1vw 2vw;
+}
+
+.example1-info-link{
+	grid-row: 3;
+	color: green;
+	font-weight: bold;
+	font-size: 1vw;
+	text-align: left;
+	padding: 0 1.5vw 1vw 2vw;
+	text-decoration: none;
+}
+
+.example1-info-link:hover{
+	color: black;
+	text-decoration: underline;
+}
+
+#example1-footer{
+	grid-row: 5;
+	background-color:green;
+
+}
+
+#example1-footer-body{
+	border-top: 1px solid grey;
+}
+
+#example1-footer-logo-container{
+	height: 4vw;
+	width: 100%;
+	justify-content: center;
+	padding: 0 10% 0 10%;
+}
+
+#example1-footer-nav-container{
+	height: 3vw;
+	width: 100%;
+	justify-content: center;
+	padding: 0.5vw 0 0.5vw 0;
+}
+
+#example1-footer-nav-container a{
+	font-family: "Franklin Gothic Demi";
+	text-decoration: underline;
+	font-size: 1vw;
+}
+
+#example1-footer-nav-container a:hover{
+	color: white;
+}
+
+#example1-footer-nav-container a:active{
+	color: lightgreen;
+}
+
+#example1-footer-links-container{
+	height: 6vw;
+	width: 100%;
+	justify-content: space-evenly;
+	padding: 2vw 30% 2vw 30%;
+}
+
+#example1-footer-links-container a{
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+#example1-footer-links-container a:hover{
+	color: white;
+}
+
+#example1-footer-links-container a:active{
+	color: lightgreen;
+}

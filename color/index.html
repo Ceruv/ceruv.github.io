@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html class="container">
+
+	<head>
+		<title>PalettePicker</title>
+		<link rel="stylesheet" type="text/css" href="./css/appstyle.css">
+		<link rel="stylesheet" type="text/css" href="./css/example1Appstyle.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script defer type="text/javascript" src="./appscripts/colourConverters.js"></script>
+		<script defer type="text/javascript" src="./appscripts/main.js"></script>
+	</head>
+
+	<body class="container">
+		<div id="guide-nav-openIcon" class="navOpenIcon">
+		</div>
+		<div id="guide-nav-body" class="navBody-container-grid">
+			<div class="navHeader-container-centerText">Guide
+				<div id="guide-nav-closeIcon" class="navCloseIcon"></div>
+			</div>
+			<div id="guide-content-container" class="container-grid">
+				<!--BLACK GUIDE-->
+				<div id="guide-black" class="colorInfo-container-grid">
+					<div class="colorInfo-color-container">
+						<svg class="container" viewbox="0 0 101 101">
+							<circle cx="51" cy="51" r="49" fill="black" />
+						</svg>
+					</div>
+					<p id="guide-black-name" class="colorInfo-color-name-centerText">
+						BLACK
+					</p>
+					<p id="guide-black-attr" class="colorInfo-color-attr-centerText">
+						Prestigious<br>Valuable<br>Timeless<br>Sophisticated<br>Formal
+					</p>
+				</div>
+				<!--GRAY GUIDE-->
+				<div id="guide-gray" class="colorInfo-container-grid">
+					<div class="colorInfo-color-container">
+						<svg class="container" viewbox="0 0 101 101">
+							<circle cx="51" cy="51" r="49" fill="gray" />
+						</svg>
+					</div>
+					<p id="guide-gray-name" class="colorInfo-color-name-centerText">
+						GRAY
+					</p>
+					<p id="guide-gray-attr" class="colorInfo-color-attr-centerText">
+						Scientific<br>Balanced<br>Calm<br>Mature<br>Cold
+					</p>
+				</div>
+				<!--WHITE GUIDE-->
+				<div id="guide-white" class="colorInfo-container-grid">
+					<div class="colorInfo-color-container">
+						<svg class="container" viewbox="0 0 101 101">
+							<circle cx="51" cy="51" r="49" fill="white" stroke="black" stroke-width="1px"/>
+						</svg>
+					</div>
+					<p id="guide-white-name" class="colorInfo-color-name-centerText">
+						WHITE
+					</p>
+					<p id="guide-white-attr" class="colorInfo-color-attr-centerText">
+						Pure<br>Noble<br>Clean<br>Soft<br>Fresh
+					</p>
+				</div>
+
+				<!--BROWN GUIDE-->
+				<div id="guide-brown" class="colorInfo-container-grid">
+					<div class="colorInfo-color-container">
+						<svg class="container" viewbox="0 0 101 101">
+							<circle cx="51" cy="51" r="49" fill="#6b2e00" />
+						</svg>
+					</div>
+					<p id="guide-brown-name" class="colorInfo-color-name-centerText">
+						BROWN
+					</p>
+					<p id="guide-brown-attr" class="colorInfo-color-attr-centerText">
+						Earthy<br>Natural<br>Simple<br>Durable<br>Rustic
+					</p>
+				</div>
+
+				<!--GOLD GUIDE-->
+				<div id="guide-gold" class="colorInfo-container-grid">
+					<div class="colorInfo-color-container">
+						<svg class="container" viewbox="0 0 101 101">
+							<circle cx="51" cy="51" r="49" fill="gold" />
+						</svg>
+					</div>
+					<p id="guide-gold-name" class="colorInfo-color-name-centerText">
+						GOLD
+					</p>
+					<p id="guide-gold-attr" class="colorInfo-color-attr-centerText">
+						Elegant<br>Affluent<br>Quality<br>Elite<br>Idealistic
+					</p>
+				</div>
+
+				<!--YELLOW GUIDE-->
+				<div id="guide-yellow" class="colorInfo-container-grid">
+					<div class="colorInfo-color-container">
+						<svg class="container" viewbox="0 0 101 101">
+							<circle cx="51" cy="51" r="49" fill="#fce405"/>
+						</svg>
+					</div>
+					<p id="guide-yellow-name" class="colorInfo-color-name-centerText">
+						YELLOW
+					</p>
+					<p id="guide-yellow-attr" class="colorInfo-color-attr-centerText">
+						Positive<br>Bright<br>Warm<br>Creative<br>Motivational
+					</p>
+				</div>
+				<!--PURPLE GUIDE-->
+				<div id="guide-purple" class="colorInfo-container-grid">
+					<div class="colorInfo-color-container">
+						<svg class="container" viewbox="0 0 101 101">
+							<circle cx="51" cy="51" r="49" fill="purple" />
+						</svg>
+					</div>
+					<p id="guide-purple-name" class="colorInfo-color-name-centerText">
+						PURPLE
+					</p>
+					<p id="guide-purple-attr" class="colorInfo-color-attr-centerText">
+						Royal<br>Nostalgic<br>Mysterious<br>Sophisticated<br>Spiritual
+					</p>
+				</div>
+				<!--RED GUIDE-->
+				<div id="guide-red" class="colorInfo-container-grid">
+					<div class="colorInfo-color-container">
+						<svg class="container" viewbox="0 0 101 101">
+							<circle cx="51" cy="51" r="49" fill="red" />
+						</svg>
+					</div>
+					<p id="guide-red-name" class="colorInfo-color-name-centerText">
+						RED
+					</p>
+					<p id="guide-red-attr" class="colorInfo-color-attr-centerText">
+						Aggressive<br>Energy<br>Provocative<br>Passionate<br>Powerful
+					</p>
+				</div>
+				<!--PINK GUIDE-->
+				<div id="guide-pink" class="colorInfo-container-grid">
+					<div class="colorInfo-color-container">
+						<svg class="container" viewbox="0 0 101 101">
+							<circle cx="51" cy="51" r="49" fill="pink" />
+						</svg>
+					</div>
+					<p id="guide-pink-name" class="colorInfo-color-name-centerText">
+						PINK
+					</p>
+					<p id="guide-pink-attr" class="colorInfo-color-attr-centerText">
+						Tender<br>Sensitive<br>Friendly<br>Compassionate<br>Beautiful
+					</p>
+				</div>
+				<!--GREEN GUIDE-->
+				<div id="guide-green" class="colorInfo-container-grid">
+					<div class="colorInfo-color-container">
+						<svg class="container" viewbox="0 0 101 101">
+							<circle cx="51" cy="51" r="49" fill="green" />
+						</svg>
+					</div>
+					<p id="guide-green-name" class="colorInfo-color-name-centerText">
+						GREEN
+					</p>
+					<p id="guide-green-attr" class="colorInfo-color-attr-centerText">
+						Prestigious<br>Healthy<br>Wealthy<br>Serene<br>Abundant
+					</p>
+				</div>
+				<!--BLUE GUIDE-->
+				<div id="guide-blue" class="colorInfo-container-grid">
+					<div class="colorInfo-color-container">
+						<svg class="container" viewbox="0 0 101 101">
+							<circle cx="51" cy="51" r="49" fill="skyblue" />
+						</svg>
+					</div>
+					<p id="guide-blue-name" class="colorInfo-color-name-centerText">
+						BLUE
+					</p>
+					<p id="guide-blue-attr" class="colorInfo-color-attr-centerText">
+						Trustworthy<br>Dependable<br>Secure<br>Integrous<br>Calm
+					</p>
+				</div>
+				<!--ORANGE GUIDE-->
+				<div id="guide-orange" class="colorInfo-container-grid">
+					<div class="colorInfo-color-container">
+						<svg class="container" viewbox="0 0 101 101">
+							<circle cx="51" cy="51" r="49" fill="orange" />
+						</svg>
+					</div>
+					<p id="guide-orange-name" class="colorInfo-color-name-centerText">
+						ORANGE
+					</p>
+					<p id="guide-orange-attr" class="colorInfo-color-attr-centerText">
+						Energetic<br>Fun<br>Playful<br>Youthful<br>Cheerful
+					</p>
+				</div>				
+			</div>
+		</div>
+		<div id="color-nav-openIcon" class="navOpenIcon">
+		</div>
+		<div id="color-nav-body" class="navBody-container-grid">
+			<div class="navHeader-container-centerText">Colour
+				<div id="color-nav-closeIcon" class="navCloseIcon"></div>
+			</div>
+			<div id="color-palette-container" class="container-grid">
+				<input type="color" id="palette-bg" class="palette-display"></input>
+				<input type="color" id="palette-c1" class="palette-display"></input>
+				<input type="color" id="palette-c2" class="palette-display"></input>
+				<input type="color" id="palette-c3" class="palette-display"></input>
+				<input type="color" id="palette-c4" class="palette-display"></input>
+				<input type="color" id="palette-c5" class="palette-display"></input>
+				<label id="palette-bg-label" class="palette-display-label">
+					<p>Background Color</p>
+					<p id="bg-hex">#1111</p>
+				</label>
+				<label id="palette-c1-label" class="palette-display-label">
+					<p>Color 1</p>
+					<p id="c1-hex">#1111</p>
+				</label>
+				<label id="palette-c2-label" class="palette-display-label">
+					<p>Color 2</p>
+					<p id="c2-hex">#1111</p>
+				</label>
+				<label id="palette-c3-label" class="palette-display-label">
+					<p>Color 3</p>
+					<p id="c3-hex">#1111</p>
+				</label>
+				<label id="palette-c4-label" class="palette-display-label">
+					<p>Color 4</p>
+					<p id="c4-hex">#1111</p>
+				</label>
+				<label id="palette-c5-label" class="palette-display-label">
+					<p>Color 5</p>
+					<p id="c5-hex">#1111</p>
+				</label>
+			</div>
+			<div id="color-palette-inputs"></div>
+		</div>
+		<div id="display-main" class="container">
+			<section id="example1" class="container-grid">
+				<header id="example1-header" class="container-flex">
+					<a href="#example1" id="example1-logo-container" class="container-flex">
+						<article><b class="example1-logo-text1">R</b><b class="example1-logo-text2">YAN</b><b class="example1-logo-text1">T</b><b class="example1-logo-text2">AN</b></article>
+						<div id="example1-logo-divider"></div>
+						<i class="example1-logo-text3">Unlicensed Medical Practitioner</i>
+					</a>
+					<div id="example1-nav-container" class="flex-nav">
+						<div class="example1-nav-item">About Me &#11167;
+							<div class="example1-dropdown">
+								<div>Qualifications</div>
+								<div>Mission</div>
+								<div>Vision</div>
+								<div>Debunking Malpractice Allegations</div>
+								<div>Non-disclosure Policy</div>
+							</div>
+						</div>
+						<a class="example1-nav-item">Alternative Treatments &#11167;
+							<div class="example1-dropdown">
+								<div>Radiation Exposure</div>
+								<div>The Placebo Program</div>
+								<div>Just Be Happy&#153;</div>
+								<div>Black Magic</div>
+								<div>Excessive Fruit Diet</div>
+							</div>
+						</a>
+						<a class="example1-nav-item">Pest Control Services &#11167;
+							<div class="example1-dropdown">
+								<div>Cockroaches</div>
+								<div>Rodents</div>
+								<div>Ghosts</div>
+								<div>People</div>
+								<div>Nuclear Waste</div>
+							</div>
+						</a>
+						<a class="example1-nav-item">Contact &#11167;
+							<div class="example1-dropdown">
+								<div>Book A Consultation</div>
+								<div>Legal</div>
+								<div>Careers</div>
+								<div>Clinical Trials</div>
+								<div>Locations</div>
+							</div>
+						</a>
+					</div>
+				</header>
+				<section id="example1-bg-container" class="container-flex">
+					<div id="example1-bg">
+					</div>
+				</section>
+				<section id="example1-introSection">
+					<h1 id="example1-introHeader" class="example1-para-text1">The Premier Professional Healthcare Service Provider In Singapore</h1>
+					<p class="example1-para-text2">Founded by self-certified Dr. Ryan Tan (B.Soc.Sc, pending), the <i><b>RYANTAN&#153;</b></i> clinic aims to provide the ordinary Singaporean citizen with a wide range of the latest options in alternative medicine. Staffed by our enthusiastic and unpaid interns, our clinic strives to bring the best of foreign alternative medicine to our local shores. Through the generous donations of our former patrons, the clinic is able to offer low-cost medical screenings to our patients.
+					<br><br>
+					Using cutting-edge technology along with a high standard of cleanliness, we are committed to providing services and products that are sure to guarantee satisfaction. All treatments are specially-tailored and specific to each and every patient, to ensure the greatest degree of success possible. Owing to our new covid-19 policy to reduce the risk of virus exposure to our staff and patients alike, face-to-face consultations require a referral from your local palm-reader or fortune teller.
+					<br><br>
+					Apart from medical assistance, the <i><b>RYANTAN&#153;</b></i> clinic also offers a variety of pest control services. As a researcher well-acquainted with the topics of vermin and other minor inconveniences, Dr. Tan is arguably qualified to take care of an assortment of nuisances for you.
+					<br><br>
+					Browse our schedule to book an online consultation with us today.</p>
+
+					<br>
+
+					<a id="example1-scheduleButton" class="flex">
+						<p>Learn More</p>
+					</a>
+				</section>
+				<section id="example1-infoSection">
+					<h1 class="example1-para-text1">Affordable Alternatives For All</h1>
+					<div id="example1-info-container" class="container-flex">
+						<div class="example1-info-item-grid">
+							<div id="example1-info1" class="example1-info-bg"></div>
+							<div class="example1-info-text">
+								<h1 class="example1-para-text3">Could earwax be worth more than gold?</h1>
+								<p class="example1-para-text4">Top economists say: "What? No."</p>
+							</div>
+							<a href="#" class="example1-info-link">Read more &#9654;</a>
+						</div>
+						<div class="example1-info-item-grid">
+							<div id="example1-info2" class="example1-info-bg"></div>
+							<div class="example1-info-text">
+								<h1 class="example1-para-text3">"If animals do not want to be eaten, then why are they made of food?"</h1>
+								<p class="example1-para-text4">Delve into the ethics of eating meat.</p>
+							</div>
+							<a href="#" class="example1-info-link">Read more &#9654;</a>
+						</div>
+						<div class="example1-info-item-grid">
+							<div id="example1-info3" class="example1-info-bg"></div>
+							<div class="example1-info-text">
+								<h1 class="example1-para-text3">Abortion: How to speak to your child about it</h1>
+								<p class="example1-para-text4">Find out how to discuss the implications of childbirth with your kids.</p>
+							</div>
+							<a href="#" class="example1-info-link">Read more &#9654;</a>
+						</div>
+						<div class="example1-info-item-grid">
+							<div id="example1-info4" class="example1-info-bg"></div>
+							<div class="example1-info-text">
+								<h1 class="example1-para-text3">Overcoming your diseases with Clorox&#153;</h1>
+								<p class="example1-para-text4">You can't be sick if you are dead.</p>
+							</div>
+							<a href="#" class="example1-info-link">Read more &#9654;</a>
+						</div>
+					</div>
+				</section>
+				<section id="example1-footer" class="container">
+					<div id="example1-footer-body" class="container">
+						<div id="example1-footer-logo-container" class="container-flex">
+							<a href="#example1" id="example1-logo-container" class="container-flex">
+								<article><b class="example1-logo-text1">R</b><b class="example1-logo-text2">YAN</b><b class="example1-logo-text1">T</b><b class="example1-logo-text2">AN</b></article>
+								<div id="example1-logo-divider"></div>
+								<i class="example1-logo-text3">Unlicensed Medical Practitioner</i>
+							</a>
+						</div>
+						<div id="example1-footer-nav-container" class="flex">
+							<p><a>Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a>About Me</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a>Alternative Treatments</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a>Pest Control Services</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a>Contact</a></p>
+						</div>
+						<div id="example1-footer-links-container" class="flex">
+							<a class="fa fa-envelope fa-2x" href="#"></a>
+							<a class="fa fa-facebook fa-2x" href="#"></a>
+							<a class="fa fa-telegram fa-2x" href="#"></a>
+							<a class="fa fa-instagram fa-2x" href="#"></a>
+						</div>
+						<p class="example1-para-text5">© 2022 Ryan Tan Junwei. Reg. No. 12345678 All rights reserved.</p>
+					</div>
+				</section>
+			</section>
+		</div>
+	</body>
+</html>
