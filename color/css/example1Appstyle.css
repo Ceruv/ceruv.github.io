@@ -15,7 +15,7 @@
 #example1{
 	grid-row: 1;
 	background-color: white;
-	grid-template-rows: 8% 70% auto auto auto;
+	grid-template-rows: 8% 70% auto auto auto auto;
 }
 
 #example1-header{
@@ -28,11 +28,12 @@
 	z-index: 1;
 	padding: 0 15% 0 15%;
 	justify-content: space-between;
+	user-select: none;
 }
 
 #example1-logo-container{
-	width: 12vw;
-	padding: 0.4vw 0.3vw 0 0.7vw;
+	width: 10.6vw;
+	padding: 0.8vw 0.4vw 0 0.4vw;
 	flex-direction: column;
 	justify-content: center;
 	text-decoration: none;
@@ -74,12 +75,37 @@
 	line-height: 1.5;
 }
 
+.example1-logo-text4{
+	font-family: "Franklin Gothic Demi";
+	font-size: 1.5vw;
+	letter-spacing: 0.8vw;
+	line-height: 0;
+	color: lightgreen;
+}
+
+.example1-logo-text5{
+	font-family: "Franklin Gothic Medium";
+	font-size: 1vw;
+	letter-spacing: 0.8vw;
+	line-height: 0;
+	color: lightgreen;
+}
+
+.example1-logo-text6{
+	font-family: "Franklin Gothic Medium";
+	font-size: 0.47vw;
+	letter-spacing: 0.11vw;
+	line-height: 1.5;
+	color: lightgreen;
+}
+
 .example1-para-text1{
 	font-family: "Franklin Gothic Demi";
 	color: green;
 	font-weight: bold;
 	font-size: 2vw;
 	text-align: center;
+	user-select: none;
 }
 
 .example1-para-text2{
@@ -95,7 +121,8 @@
 	color: green;
 	font-weight: bold;
 	font-size: 1.4vw;
-	text-align: left
+	text-align: left;
+	user-select: none;
 }
 
 .example1-para-text4{
@@ -110,10 +137,37 @@
 	text-align: center;
 }
 
-#example1-logo-divider{
-	height: 0.25vh;
-	width: 9.7vw;
-	background-color: black;
+.example1-para-text6{
+	font-family: "Franklin Gothic Demi";
+	color: lightgreen;
+	font-weight: bold;
+	font-size: 2vw;
+	text-align: center;
+	user-select: none;
+}
+
+.example1-para-text7{
+	font-family: "Franklin Gothic Demi";
+	color: lightgreen;
+	font-weight: bold;
+	font-size: 1.5vw;
+	text-align: center;
+	line-height: 0;
+}
+
+.example1-para-text8{
+	font-family: "Franklin Gothic Medium";
+	color: lightgreen;
+	font-size: 1vw;
+	text-align: center;
+}
+
+.example1-logo-header{
+	border-bottom: 0.25vh solid black;
+}
+
+.example1-logo-footer{
+	border-bottom: 0.25vh solid lightgreen;
 }
 
 #example1-nav-container{
@@ -130,6 +184,7 @@
 	text-align: left;
 }
 
+
 .example1-nav-item:hover .example1-dropdown{
 		display: block;
 }
@@ -138,7 +193,6 @@
 .example1-nav-item:hover{
 		border-bottom: 3px solid green;
 }
-
 
 .example1-dropdown{
 	display: none;
@@ -186,15 +240,16 @@
 
 #example1-introSection{
 	grid-row: 3;
-	padding: 2% 20% 10% 20%;
+	padding: 2% 20% 5% 20%;
 }
 
-#example1-scheduleButton{
+.example1-learnMoreButton-flex{
 	justify-content: center;
+	user-select: none;
 }
 
 
-#example1-scheduleButton p{
+.example1-learnMoreButton-flex p{
 	font-family: "Franklin Gothic Demi";
 	font-size: 1.2vw;	
 	margin: 0;
@@ -203,17 +258,72 @@
 }
 
 
-#example1-scheduleButton p:hover{
+.example1-learnMoreButton-flex p:hover{
 	transform: translateY(1px);
 	background-color: rgb(120,214,120,1);
 }
 
-#example1-scheduleButton p:active{
+.example1-learnMoreButton-flex p:active{
 	background-color: green;
 }
 
-#example1-infoSection{
+
+#example1-serviceSection{
 	grid-row: 4;
+	background-image: linear-gradient(
+		rgb(0,100,0,0.9), 
+		rgb(0,100,0,0.9)), url("../resources/example1servicebg.jpg");
+	background-size: cover;
+	width: 100%;
+	padding: 2vw 20vw 2vw 20vw;
+	user-select: none;
+}
+
+.example1-service-flex{
+	height: 40vh;
+	padding: 5vh;
+	justify-content: space-around;
+ 	box-shadow: 1rem 1rem 1rem 0 rgba(0, 0, 0, .5); 
+  	border-radius: 30px;
+  	border-color: white;
+  	border-top: 1px solid rgba(255,255,255,0.5);
+  	border-left: 1px solid rgba(255,255,255,0.5);
+ 	background-color: rgba(255, 255, 255, .15);
+ 	backdrop-filter: blur(10px);
+}
+.example1-service-image{
+	width: 30vh;
+	height: 30vh;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+ 	box-shadow: 0.5rem 0.5rem 1rem 0 rgba(0, 0, 0, .5) inset,  -0.5rem -0.5rem 1rem 0 rgba(0, 0, 0, .5) inset; 
+  	border-color: white;
+  	border-top: 1px solid rgba(255,255,255,0.5);
+  	border-left: 1px solid rgba(255,255,255,0.5);
+}
+
+.example1-service-para-flex{
+	padding: ;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 30vw;
+}
+
+#example1-service-1{
+	background-image: url("../resources/example1service1.jpg");
+}
+
+#example1-service-2{
+	background-image: url("../resources/example1service2.jpg");
+}
+
+#example1-service-3{
+	background-image: url("../resources/example1service3.jpg");
+}
+
+#example1-infoSection{
+	grid-row: 5;
 	padding: 2% 10% 10% 10%;
 }
 
@@ -250,8 +360,6 @@
 	grid-row: 1;
 	background-size: cover;
 	border-radius: 5px;
-
-
 }
 
 #example1-info1{
@@ -299,6 +407,7 @@
 	text-align: left;
 	padding: 0 1.5vw 1vw 2vw;
 	text-decoration: none;
+	user-select: none;
 }
 
 .example1-info-link:hover{
@@ -307,9 +416,9 @@
 }
 
 #example1-footer{
-	grid-row: 5;
+	grid-row: 6;
 	background-color:green;
-
+	user-select: none;
 }
 
 #example1-footer-body{
@@ -334,14 +443,17 @@
 	font-family: "Franklin Gothic Demi";
 	text-decoration: underline;
 	font-size: 1vw;
+	color: lightgreen;
 }
 
 #example1-footer-nav-container a:hover{
-	color: white;
+	opacity: 0.7;
+	transform: translateY(1px);
 }
 
 #example1-footer-nav-container a:active{
-	color: lightgreen;
+	opacity: 0.4;
+	transform: translateY(2px);
 }
 
 #example1-footer-links-container{
@@ -354,13 +466,15 @@
 #example1-footer-links-container a{
 	text-align: center;
 	text-decoration: none;
-	color: black;
+	color: lightgreen;
 }
 
 #example1-footer-links-container a:hover{
-	color: white;
+	opacity: 0.7;
+	transform: translateY(1px);
 }
 
 #example1-footer-links-container a:active{
-	color: lightgreen;
+	opacity: 0.4;
+	transform: translateY(2px);
 }
